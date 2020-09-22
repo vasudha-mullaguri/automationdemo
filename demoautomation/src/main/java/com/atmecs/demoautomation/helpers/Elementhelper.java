@@ -23,17 +23,14 @@ import junit.framework.Assert;
 public class Elementhelper {
 WebDriver driver;
 	
-    public Elementhelper(WebDriver driver){
-		this.driver=driver;
-	}
-	
-	public  void clickElement(String path,String element) {
+    
+	public  void clickElement(WebDriver driver,String path,String element) {
 		Properties loc_path=PropertyReader.readProperties(path);
 		String xpath=loc_path.getProperty(element);
 		driver.findElement(By.xpath(xpath)).click();
 	}
 
-	public void sendKeys(String path, String details_path,String element, String text) {
+	public void sendKeys(WebDriver driver,String path, String details_path,String element, String text) {
 		Properties loc_path= PropertyReader.readProperties(path);
 		Properties properties= PropertyReader.readProperties(details_path);
 		String xpath=loc_path.getProperty(element);
@@ -42,14 +39,14 @@ WebDriver driver;
 	}
 
 	
-	public  void explicitWait(String path, String element) {
+	public  void explicitWait(WebDriver driver,String path, String element) {
 		Properties loc_path= PropertyReader.readProperties(path);
 		String xpath=loc_path.getProperty(element);
 		WebDriverWait wait = new WebDriverWait(driver, 50);
 		WebElement element1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
      	element1.click();
 	}
-	public void selectFromDropdown(String path,String value_path,String element,String valueToSelect)
+	public void selectFromDropdown(WebDriver driver,String path,String value_path,String element,String valueToSelect)
 	{
 		Properties loc_path= PropertyReader.readProperties(path);
 		String xpath=loc_path.getProperty(element);
@@ -59,7 +56,7 @@ WebDriver driver;
 	dropdown.selectByVisibleText(value);
 	}
 	
-	public void switchToWindow(String path,String element) {
+	public void switchToWindow(WebDriver driver,String path,String element) {
 		Properties window_path=PropertyReader.readProperties(path);
 		String xpath=window_path.getProperty(element);
 		String parentWindow=driver.getWindowHandle();

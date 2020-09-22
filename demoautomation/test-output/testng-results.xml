@@ -2,21 +2,21 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26349" started-at="2020-09-22T04:30:45Z" finished-at="2020-09-22T04:31:12Z">
+  <suite name="Default suite" duration-ms="37900" started-at="2020-09-22T06:17:31Z" finished-at="2020-09-22T06:18:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26349" started-at="2020-09-22T04:30:45Z" finished-at="2020-09-22T04:31:12Z">
+    <test name="Default test" duration-ms="37900" started-at="2020-09-22T06:17:31Z" finished-at="2020-09-22T06:18:09Z">
       <class name="com.atmecs.demoautomation.testscripts.Testhomepage">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.atmecs.demoautomation.testscripts.Testhomepage@47f37ef1]" name="invokeBrowser" is-config="true" duration-ms="21577" started-at="2020-09-22T10:00:45Z" finished-at="2020-09-22T10:01:07Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.atmecs.demoautomation.testscripts.Testhomepage@47f37ef1]" name="invokeBrowser" is-config="true" duration-ms="33132" started-at="2020-09-22T11:47:31Z" finished-at="2020-09-22T11:48:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="FAIL" signature="submitDetails()[pri:0, instance:com.atmecs.demoautomation.testscripts.Testhomepage@47f37ef1]" name="submitDetails" duration-ms="16" started-at="2020-09-22T10:01:07Z" finished-at="2020-09-22T10:01:07Z">
+        <test-method status="FAIL" signature="submitDetails()[pri:0, instance:com.atmecs.demoautomation.testscripts.Testhomepage@47f37ef1]" name="submitDetails" duration-ms="45" started-at="2020-09-22T11:48:04Z" finished-at="2020-09-22T11:48:04Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.atmecs.demoautomation.helpers.Elementhelper.sendKeys(Elementhelper.java:41)
-	at com.atmecs.demoautomation.pages.Homepage.formDetails(Homepage.java:21)
+	at com.atmecs.demoautomation.helpers.Elementhelper.sendKeys(Elementhelper.java:38)
+	at com.atmecs.demoautomation.pages.Homepage.formDetails(Homepage.java:20)
 	at com.atmecs.demoautomation.testscripts.Testhomepage.submitDetails(Testhomepage.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitDetails -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.atmecs.demoautomation.testscripts.Testhomepage@47f37ef1]" name="closeBrowser" is-config="true" duration-ms="4725" started-at="2020-09-22T10:01:07Z" finished-at="2020-09-22T10:01:12Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.atmecs.demoautomation.testscripts.Testhomepage@47f37ef1]" name="closeBrowser" is-config="true" duration-ms="4676" started-at="2020-09-22T11:48:04Z" finished-at="2020-09-22T11:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
