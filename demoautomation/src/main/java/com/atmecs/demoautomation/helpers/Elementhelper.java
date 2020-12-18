@@ -14,15 +14,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.atmecs.demoauomation.constants.Constant;
-import com.atmecs.demoautomation.testsuite.Basetest;
 import com.atmecs.demoautomation.utils.PropertyReader;
 
 import bsh.org.objectweb.asm.Constants;
 import junit.framework.Assert;
 
 public class Elementhelper {
-WebDriver driver;
-	
     
 	public  void clickElement(WebDriver driver,String path,String element) {
 		Properties loc_path=PropertyReader.readProperties(path);
@@ -32,10 +29,11 @@ WebDriver driver;
 
 	public void sendKeys(WebDriver driver,String path, String details_path,String element, String text) {
 		Properties loc_path= PropertyReader.readProperties(path);
-		Properties properties= PropertyReader.readProperties(details_path);
 		String xpath=loc_path.getProperty(element);
+		Properties properties= PropertyReader.readProperties(details_path);
 		String data=properties.getProperty(text);
 		driver.findElement(By.xpath(xpath)).sendKeys(data);
+		
 	}
 
 	

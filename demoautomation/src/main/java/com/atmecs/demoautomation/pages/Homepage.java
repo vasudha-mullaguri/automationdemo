@@ -11,7 +11,7 @@ import com.atmecs.demoautomation.utils.PropertyReader;
 
 public class Homepage {
 
-   public WebDriver driver;	
+  public WebDriver driver;	
 
 	public void formDetails(){
 		
